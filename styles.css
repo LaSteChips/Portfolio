@@ -11,10 +11,11 @@ body {
 
 #interet {
     color: whitesmoke;
+    text-align: center;
 }
 
 .tech {
-    text-align: center;
+    text-align: right;
 }
 
 .jv {
