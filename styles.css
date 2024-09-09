@@ -84,11 +84,11 @@ h4 {
 
 /* Effet de survol sur les images */
 .special-section .interest img {
-    transition: transform 0.3s ease;
+    transition: transform 0.5s ease;
 }
 
 .special-section .interest img:hover {
-    transform: scale(1.1);
+    transform: scale(1.2);
 }
 
 section ul {
@@ -179,11 +179,11 @@ section ul {
 }
 
 #qualities .quality img {
-    transition: transform 0.3s ease;
+    transition: transform 0.5s ease;
 }
 
 #qualities .quality img:hover {
-    transform: scale(1.1);
+    transform: scale(1.2);
 }
 
 .quality-image {

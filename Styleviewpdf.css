@@ -1,0 +1,63 @@
+html, body, header, ul, li, a, footer {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    text-align: center;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: rgb(35, 39, 42);
+    color: whitesmoke;
+}
+
+header {
+    background-color: rgb(11, 12, 12);
+    color: whitesmoke;
+    padding: 1px;
+}
+
+.viewer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+embed {
+    width: 60%;
+    height: 700px;
+    border: 1px solid rgb(35, 39, 42);
+}
+
+#links {
+    width: 35%;
+    text-align: left;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin: 10px 0;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(231, 0, 0);
+    cursor: pointer;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: rgb(231, 0, 0);
+}
+
+footer {
+    padding: 20px;
+    color: whitesmoke;
+}

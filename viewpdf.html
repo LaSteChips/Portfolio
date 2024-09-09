@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Styleviewpdf.css">
+    <title>Portfolio Alexandre Samin - PDF Viewer</title>
+    <style>
+        .viewer-container {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            padding: 20px;
+        }
+
+        embed {
+            width: 60%;
+            height: 800px;
+            border: 1px solid rgb(35, 39, 42);
+        }
+
+        #links {
+            margin-left: 20px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        ul li {
+            margin: 10px 0;
+        }
+
+        a {
+            text-decoration: none;
+            color: rgb(231, 0, 0);
+            cursor: pointer;
+        }
+
+        a:hover {
+            text-decoration: underline;
+            color: rgb(231, 0, 0);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>PDF Viewer</h1>
+    </header>
+    <div class="viewer-container">
+        <embed id="pdfViewer" src="Documents/Documents E5 (JEU et CRUD) - Alexandre Samin.pdf">
+        <section id="links">
+            <ul>
+                <p>Cliquez sur les liens ci-dessous pour modifier le pdf afficher : </p>
+                <li><a onclick="changePDF('Documents/CV Alexandre Samin 2024.pdf')">CV Alexandre Samin 2024 (old)</a></li>
+                <li><a onclick="changePDF('Documents/Documents E4 - Alexandre Samin.pdf')">Documents E4 (old)</a></li>
+                <li><a onclick="changePDF('Documents/Documents E5 (JEU et CRUD) - Alexandre Samin.pdf')">Documents E5 (old)</a></li><br>
+                <a href="projects.html">Revenir à la page de projets</a><br>
+                <a href="index.html">Revenir à la page principale</a>
+            </ul>
+        </section>
+    </div>
+    <footer>
+        <p>© 2024 Samin Alexandre</p>
+    </footer>
+    <script>
+        // Fonction pour changer la source du PDF affiché
+        function changePDF(pdfPath) {
+            document.getElementById('pdfViewer').src = pdfPath;
+        }
+    </script>
+</body>
+</html>
