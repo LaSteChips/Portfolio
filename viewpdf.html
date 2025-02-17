@@ -6,42 +6,84 @@
     <link rel="stylesheet" href="StyleViewPdf.css">
     <title>Portfolio Alexandre Samin - PDF Viewer</title>
     <style>
+    .viewer-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+    }
+
+    embed {
+        width: 80%;
+        height: 800px;
+        border: 1px solid rgb(35, 39, 42);
+        max-width: 100%;
+    }
+
+    #links {
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    ul {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    ul li {
+        margin: 10px 0;
+    }
+
+    a {
+        text-decoration: none;
+        color: rgb(231, 0, 0);
+        cursor: pointer;
+    }
+
+    a:hover {
+        text-decoration: underline;
+        color: rgb(231, 0, 0);
+    }
+
+    footer {
+        text-align: center;
+        padding: 10px;
+        background-color: rgb(35, 39, 42);
+        color: white;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+    }
+
+    /* Media Queries */
+    @media (min-width: 768px) {
         .viewer-container {
-            display: flex;
-            justify-content: center;
+            flex-direction: row;
             align-items: flex-start;
-            padding: 20px;
         }
 
         embed {
             width: 60%;
             height: 800px;
-            border: 1px solid rgb(35, 39, 42);
         }
 
         #links {
             margin-left: 20px;
+            text-align: left;
         }
+    }
 
-        ul {
-            list-style-type: none;
-            padding: 0;
+    @media (max-width: 480px) {
+        embed {
+            width: 100%;
+            height: 500px;
         }
 
         ul li {
-            margin: 10px 0;
+            font-size: 14px;
         }
-
-        a {
-            text-decoration: none;
-            color: rgb(231, 0, 0);
-            cursor: pointer;
-        }
-
-        a:hover {
-            text-decoration: underline;
-            color: rgb(231, 0, 0);
-        }
+    }
     </style>
 </head>
 <body>
@@ -49,15 +91,14 @@
         <h1>PDF Viewer</h1>
     </header>
     <div class="viewer-container">
-        <embed id="pdfViewer" src="Documents/Documents E5 (JEU et CRUD) - Alexandre Samin.pdf">
+        <embed id="pdfViewer" src="Documents/Documents E5 (JEU et CRUD - Scholar Fab).pdf">
         <section id="links">
             <ul>
                 <p>Cliquez sur les liens ci-dessous pour modifier le pdf afficher : </p>
-                <li><a onclick="changePDF('Documents/CV Alexandre Samin 2024.pdf')">CV Alexandre Samin 2024 (old)</a></li>
-                <li><a onclick="changePDF('Documents/Documents E4 - Alexandre Samin.pdf')">Documents E4 (old)</a></li>
-                <li><a onclick="changePDF('Documents/Documents E5 (JEU et CRUD) - Alexandre Samin.pdf')">Documents E5 (old)</a></li><br>
-                <a href="projects.html">Revenir à la page de projets</a><br>
-                <a href="index.html">Revenir à la page principale</a>
+                <li><a onclick="changePDF('Documents/Documents E4 (Caensup St Ursule).pdf')"> > Documents E4</a></li>
+                <li><a onclick="changePDF('Documents/Documents E5 (JEU et CRUD - Scholar Fab).pdf')"> > Documents E5 (Scholar Fab)</a></li><br>
+                <a href="projects.html"> > Revenir à la page de projets</a><br>
+                <a href="index.html"> > Revenir à la page principale</a>
             </ul>
         </section>
     </div>
