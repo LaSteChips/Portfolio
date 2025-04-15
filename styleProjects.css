@@ -1,0 +1,108 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: rgb(35, 39, 42);
+    color: aliceblue;
+    font-size: large;
+}
+
+/* Header */
+header {
+    background-color: rgb(11, 12, 12);
+    color: whitesmoke;
+    padding: 2rem;
+    text-align: center;
+}
+
+header ul {
+    list-style: none;
+    padding: 0;
+}
+
+header li {
+    margin: 0.5rem 0;
+}
+
+/* Project Row */
+.project-row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 2rem;
+    gap: 2rem;
+}
+
+.project-row.reverse {
+    flex-direction: row-reverse;
+}
+
+.reverse-row .image {
+    padding-left: 5%;
+    padding-right: 2%;
+}
+
+.reverse-row .text {
+    padding-right: 5%;
+    padding-left: 10%;
+    text-align: left; /* garde le texte lisible, mais aligné à droite de la page */
+    margin-left: auto;
+}
+
+.text {
+    flex: 1 1 50%;
+    padding-left: 10%;
+    padding-right: 2%;
+    text-align: left;
+}
+
+.image {
+    flex: 1 1 45%;
+    text-align: center;
+    padding-right: 15%;
+}
+
+
+.image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .project-row,
+    .reverse-row {
+        flex-direction: column;
+    }
+
+    .text, .image {
+        flex: 1 1 100%;
+        text-align: center;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 2rem;
+    background-color: rgb(11, 12, 12);
+    color: whitesmoke;
+}
+
+/* Links */
+a {
+    color: rgb(231, 0, 0);
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgb(231, 0, 0);
+    text-decoration: underline;
+}

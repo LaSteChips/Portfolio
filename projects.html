@@ -1,96 +1,200 @@
 <!DOCTYPE html>
 <html lang="fr">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="styles.css">
-        <title>Portfolio Alexandre Samin - Projets</title>
-    </head>
-    <body>
-        <header>
-            <h1>Projets</h1>
-            <p>Liste des projets au cours de ces années de BTS</p>
-            <p>Cliquer sur le lien vous ramènera aux dépots github ou gitlab du projet</p>
-            <section>
-                <ul>
-                    <li><a href="viewpdf.html"> > Documents E4, E5 et CV</a></li>
-                    <li><a href="index.html"> > Revenir à la page principale</a></li>
-                </ul>
-            </section>
-        </header>
-        <section id="projects" class="special-section">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Alexandre Samin - Projets</title>
+    <link rel="stylesheet" href="styleProjects.css">
+</head>
+<body>
+
+    <header>
+        <h1>Projets</h1>
+        <p>Liste des projets au cours de ces années de BTS</p>
+        <p>Cliquer sur le lien vous ramènera aux dépôts GitHub ou GitLab du projet</p>
+        <ul>
+            <li><a href="viewpdf.html">> Documents E4, E5 et CV</a></li>
+            <li><a href="index.html">> Revenir à la page principale</a></li>
+        </ul>
+    </header>
+
+    <section class="project-row">
+        <div class="text">
+            <h2 style="text-align: center;">Projet CRUD Javascript</h2>
             <ul>
-                <h4><strong>- Projet CRUD Javascript</strong></h4>
-                    <li><a href="https://github.com/LaSteChips/TSOP_WEB" target="_blank">> Lien du repository GitHub (version lourde)</a><br>
-                    <a href="https://lastechips.github.io/TSOP_WEB/index.html" target="_blank"><em>> Cliquez ici pour tester l'application (version web)</em></a>
-                    <p>Page web de connexion, suppression et création de compte <br> HTML, CSS, Javascript (NodeJS)</p></li>
-                    <p>compétences mobiliser : 
-                        <br>- travailler en mode projet
-                        <br>- gestion de projet
-                        <br>- respect des délais
-                        <br>- mise en place d'un support
-                        <br>- Conception graphique et sonore
-                        <br>- créativité
-                        <br>- Autonomie
-                    </p>
-                <h4><strong>- Projet Jeu</strong></h4>
-                    <li><a href="https://github.com/LaSteChips/TSOP" target="_blank"><em>> Lien du repository Github</em></a>
-                    <p>Jeux dans le style des prstrongier Zelda <br> Python (Pygame)</p>.</p>
-                    <p>compétences mobiliser : 
-                        <br>- travailler en mode projet
-                        <br>- gestion de projet
-                        <br>- respect des délais
-                        <br>- Conception graphique et sonore
-                        <br>- créativité
-                        <br>- Autonomie
-                    </p>
-                <h4><strong>- ContactList Python</strong></h4>
-                    <li><a href="https://github.com/LaSteChips/contactlist" target="_blank"><em>> Lien du repository GitHub (version lourde)</em></a></li>
-                    <li><a href="https://github.com/LaSteChips/projet-fin-d-ann-e-BTS/tree/version-web" target="_blank"><em>> Lien de la version web de test <strong>#coming soon#</strong></em></a></li>
-                        <p>Application lourde de gestion d'appel
-                            <br>version lourde : Python (TKinter)
-                            <br>version web : Python (Flask, Jinja2, Javascript)
-                        </p>
-                        <p>compétences mobiliser : 
-                            <br>- travailler en mode projet
-                            <br>- Autonomie
-                        </p>
-                <h4><strong>- Application android azurimmo (partie Android)</strong></h4>
-                    <li><a href="https://github.com/LaSteChips/appAndroid" target="_blank"><em>> Lien du repository GitHub</em></a></li>
-                    <p>Application de gestion immobilière (à besoin de l'api java pour fonctionner)<br>Android (Kotlin)</p></li>
-                    <p>compétences mobiliser : 
-                        <br>- travailler en mode projet
-                        <br>- gestion de projet
-                        <br>- respect des délais
-                        <br>- Conception graphique et sonore
-                        <br>- créativité
-                        <br>- Autonomie
-                    </p>
-                <h4><strong>- Api de l'application azurimmo (partie api)</strong></h4>
-                    <li><a href="https://github.com/LaSteChips/apiJava"><em>> Lien du repository GitHub</em></a></li>
-                    <p>Api de m'application de gestion immobilière
-                        <br>Java (Springboot)</p>
-                    <p>compétences mobiliser : 
-                        <br>- travailler en mode projet
-                        <br>- gestion de projet
-                        <br>- respect des délais
-                        <br>- Conception graphique et sonore
-                        <br>- créativité
-                        <br>- Autonomie
-                    </p>
-                <h4><strong>- Application de gestion de compte bancaire</strong></h4>
-                    <li><a href="https://gitlab.com/caensup9475439/2-sio-slam/2024/sio-slam-alt-2024/fintrack/compte-bancaire-groupe-coco" target="_blank"><em>> Lien repository GitHub</em></a>
-                    <p>Application web symphony de gestion de comptes bancaire
-                        <br>PHP (Symfony), Twig</p>
-                        <p>compétences mobiliser : 
-                            <br>- travailler en mode projet
-                            <br>- travail de groupe
-                            <br>- respect des délais
-                        </p>
+                <a href="https://github.com/LaSteChips/TSOP_WEB" target="_blank">- Lien GitHub (version lourde)</a><br>
+                <a href="https://lastechips.github.io/TSOP_WEB/index.html" target="_blank">- Tester l'application (version web)</a>
             </ul>
-        </section>
-        <footer>
-            <p>© 2024 Samin Alexandre</p>
-        </footer>
-    </body>
+            <p>Page web de connexion, suppression et création de compte (HTML, CSS, JS, NodeJS)<br><br>
+                Language utilisées :<br>
+                Version Lourde : HTML, CSS, JavaScript (Express NodeJS)
+                Version Web : HTML, CSS, JavaScript</p>
+            <p><strong>Compétences :</strong><br>
+                - Travailler en mode projet<br>
+                - Gestion de projet<br>
+                - Respect des délais<br>
+                - Mise en place d’un support<br>
+                - Conception graphique et sonore<br>
+                - Créativité<br>
+                - Autonomie
+            </p>
+        </div>
+        <div class="image">
+            <img src="images/tsop_web.png" alt="Projet CRUD Javascript">
+        </div>
+    </section>
+
+    <section class="project-row reverse-row" style="background-color: rgb(25, 28, 30);">
+        <div class="image">
+            <img src="images/TSOP.gif" width="640" height="360">
+        </div>
+        <div class="text">
+            <h2>Projet Jeu</h2>
+            <ul>
+                <a href="https://github.com/LaSteChips/TSOP" target="_blank"><em>- Lien du repository GitHub</em></a>
+            </ul>
+            <p>Jeu dans le style des premiers Zelda sur Nintendo NES<br><br>
+                Language utilisées :<br>
+                Python (Pygame)
+            </p>
+            <p><strong>Compétences :</strong><br>
+                - Travailler en mode projet<br>
+                - Gestion de projet<br>
+                - Respect des délais<br>
+                - Conception graphique et sonore<br>
+                - Créativité<br>
+                - Autonomie
+            </p>
+        </div>
+    </section>
+
+    <!-- Bloc 3 - Texte gauche / Image droite -->
+    <section class="project-row">
+        <div class="text">
+            <h2 style="text-align: center;">Projet ContactList Python</h2>
+            <ul>
+                <a href="https://github.com/LaSteChips/contactlist" target="_blank"><em>- Lien GitHub (version lourde)</em></a>
+                <a href="https://github.com/LaSteChips/projet-fin-d-ann-e-BTS/tree/version-web" target="_blank"><em>> Version web (à venir)</em></a>
+            </ul>
+            <p>Application de gestion d’appel<br><br>
+                Language utilisées :<br>
+                Python<br>
+            <p><strong>Compétences :</strong><br>
+                <br>- Autonomie
+            </p>
+        </div>
+        <div class="image">
+            <img src="images/screen_contactlist.png">
+        </div>
+    </section>
+
+    <section class="project-row reverse-row" style="background-color: rgb(25, 28, 30);">
+        <div class="image">
+            <img src="images/screen_android.png" width="250" height="512">
+        </div>
+        <div class="text">
+            <h2 style="text-align: center;">Application azurimmo<br>(partie Android)</h2>
+            <ul>
+                <a href="https://github.com/LaSteChips/azurimmoAndroid" target="_blank"><em>- Lien du repository GitHub</em></a>
+            </ul>
+            <p>Application de gestion immobilière <br>(à besoin de l'api java pour fonctionner)<br><br>
+                Language utilisées :<br>
+                Android (Kotlin)<br>
+                (+ Java et SQL (MariaDB) avec l'API)
+            </p>
+            <p><strong>Compétences :</strong><br>
+                <br>- travailler en mode projet
+                <br>- gestion de projet
+                <br>- respect des délais
+                <br>- Autonomie
+            </p>
+        </div>
+    </section>
+
+    <section class="project-row">
+        <div class="text">
+            <h2 style="text-align: center;">Api de l'application azurimmo</h2>
+            <ul>
+                <a href="https://github.com/LaSteChips/apiJava" target="_blank"><em>- Lien GitHub (version lourde)</em></a>
+            </ul>
+            <p>API de l'application de gestion immobilière<br><br>
+                Language utilisées :<br>
+                Java, SQL (MariaDB)</p>
+            <p><strong>Compétences :</strong><br>
+                <br>- travailler en mode projet
+                <br>- Autonomie
+            </p>
+        </div>
+        <div class="image">
+            <img src="images/screen_postman.png" width="640" height="360">
+        </div>
+    </section>
+    
+    <section class="project-row reverse-row" style="background-color: rgb(25, 28, 30);">
+        <div class="image">
+            <img src="images/Symfony_capt.png" width="640" height="360">
+        </div>
+        <div class="text">
+            <h2 style="text-align: center;">Application de gestion de compte bancaire</h2>
+            <ul>
+                <a href="https://gitlab.com/caensup9475439/2-sio-slam/2024/sio-slam-alt-2024/fintrack/compte-bancaire-groupe-coco" target="_blank"><em>- Lien du repository GitHub</em></a>
+            </ul>
+            <p>Application web symfony de gestion de compte bancaire<br><br>
+                Language utilisées :<br>
+                PHP (symfony), twig, SQL (MariaDB)</p>
+            <p><strong>Compétences :</strong><br>
+                <br>- travailler en mode projet
+                <br>- travail de groupe
+                <br>- respect des délais
+            </p>
+        </div>
+    </section>
+
+    <section class="project-row">
+        <div class="text">
+            <h2 style="text-align: center;">Application de gestion d'appels</h2><p>(Capture d'écran de la version web)</p>
+            <ul>
+                <a href="https://github.com/LaSteChips/projet-fin-d-ann-e-BTS" target="_blank"><em>- Lien GitHub (version lourde)</em></a>
+            </ul>
+            <p>API de l'application de gestion immobilière<br><br>
+                Language utilisées :<br>
+                Version lourde : Python (Tkinter), SQLite<br>
+                Version web : Python (Flask, Jinja2, JavaScript), SQLite</p>
+            <p><strong>Compétences :</strong><br>
+                <br>- travailler en mode projet
+                <br>- gestion de projet
+                <br>- respect des délais
+                <br>- Conception graphique
+                <br>- Autonomie
+            </p>
+        </div>
+        <div class="image">
+            <img src="images/capture-gestion.png">
+        </div>
+    </section>
+
+    <section class="project-row reverse-row" style="background-color: rgb(25, 28, 30);">
+        <div class="image">
+            <img src="images/screen_contactlist.png">
+        </div>
+        <div class="text">
+            <h2 style="text-align: center;">Application de gestion de contact</h2>
+            <ul>
+                <a href="https://github.com/LaSteChips/contactlist" target="_blank"><em>- Lien du repository GitHub</em></a>
+            </ul>
+            <p>Application sur terminal de gestion de contact<br><br>
+                Languages utilisées : <br>
+                Python</p>
+            <p><strong>Compétences :</strong><br>
+                <br>- travailler en mode projet
+                <br>- travail de groupe
+                <br>- respect des délais
+            </p>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2024 Samin Alexandre</p>
+    </footer>
+</body>
 </html>
