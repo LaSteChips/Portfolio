@@ -127,7 +127,7 @@ section ul {
 
 #skills .skill ul {
     background-color: rgb(24, 25, 27);
-    padding: 20px;
+    padding: 15px;
     border-radius: 10px;
     min-width: 200px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -141,7 +141,6 @@ section ul {
 #skills .skill h3 {
     margin-bottom: 5px;
 }
-
 
 /* Section qualités */
 #qualities {
